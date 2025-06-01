@@ -7,7 +7,7 @@ Authors@R: c(
     person("Isabel", "Duarte", , "iduarte@pattern.institute", role = "aut",
            comment = c(ORCID = "0000-0003-0060-2936")),
     person("Pattern Institute", role = c("cph", "fnd"),
-           comment = c("https://www.pattern.institute", ROR = "04jrgd746"))
+           comment = c(ROR = "04jrgd746"))
   )
 Description: Provides sample metadata, raw counts, and normalized transcriptomic
     data from a NASA-funded experiment examining the effects of artificial
@@ -25,3 +25,6 @@ RoxygenNote: 7.3.2
 URL: https://www.pattern.institute/OSD758/, https://www.github.com/patterninstitute/OSD758/
 BugReports: https://www.github.com/patterninstitute/OSD758/issues
 Config/Needs/website: patterninstitute/chic
+Imports: 
+    readr,
+    tibble
