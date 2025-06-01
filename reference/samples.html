@@ -86,6 +86,11 @@ housed during the mission.</p>
 <li><p><code>0.000001</code> — represents orbital free fall (a proxy for microgravity). Although gravitational pull is still ~90% of Earth’s at ISS altitude, this reflects the net effective acceleration in the free-fall frame.</p></li>
 </ul><p>This variable supports quantitative modeling of gravity-dependent effects.</p></dd>
 
+
+<dt><code>gravity_class</code></dt>
+<dd><p>Effective gravity categories as a factor variable.</p></dd>
+
+
 <dt><code>weight_at_launch</code></dt>
 <dd><p>Body weight of the animal at the time of launch (or analogous time point for ground controls), in grams.</p></dd>
 
@@ -98,7 +103,7 @@ housed during the mission.</p>
     <div class="section level2">
     <h2 id="ref-examples">Examples<a class="anchor" aria-label="anchor" href="#ref-examples"></a></h2>
     <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="fu">samples</span><span class="op">(</span><span class="op">)</span></span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 35 × 9</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 35 × 10</span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>    sample_id        organism sex   matrix spacecraft acceleration_source gravity</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>            <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;fct&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;fct&gt;</span>      <span style="color: #949494; font-style: italic;">&lt;fct&gt;</span>                 <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 1</span> MHU-8_RTN_FLT_F… Mus mus… male  Right… ISS        Centrifugal Accele…  3.3<span style="color: #949494;">e</span><span style="color: #BB0000;">-1</span></span>
@@ -112,7 +117,8 @@ housed during the mission.</p>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 9</span> MHU-8_RTN_FLT_F… Mus mus… male  Right… ISS        Centrifugal Accele…  3.3<span style="color: #949494;">e</span><span style="color: #BB0000;">-1</span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">10</span> MHU-8_RTN_FLT_F… Mus mus… male  Right… ISS        Centrifugal Accele…  6.6<span style="color: #949494;">e</span><span style="color: #BB0000;">-1</span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># ℹ 25 more rows</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># ℹ 2 more variables: weight_at_launch &lt;dbl&gt;, weight_at_euthanasia &lt;dbl&gt;</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># ℹ 3 more variables: gravity_class &lt;fct&gt;, weight_at_launch &lt;dbl&gt;,</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   weight_at_euthanasia &lt;dbl&gt;</span></span>
 <span class="r-in"><span></span></span>
 </code></pre></div>
     </div>
