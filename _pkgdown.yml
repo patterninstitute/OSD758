@@ -1,4 +1,5 @@
 url: https://www.pattern.institute/OSD758/
 template:
+  package: chic
   bootstrap: 5
 

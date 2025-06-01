@@ -24,3 +24,4 @@ Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.2
 URL: https://www.pattern.institute/OSD758/, https://www.github.com/patterninstitute/OSD758/
 BugReports: https://www.github.com/patterninstitute/OSD758/issues
+Config/Needs/website: patterninstitute/chic
