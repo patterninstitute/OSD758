@@ -6,7 +6,7 @@
 \alias{OSD758-package}
 \title{OSD758: Artificial Gravity Attenuates the Transcriptomic Response to Spaceflight in the Optic Nerve and Retina}
 \description{
-Provides sample metadata, raw counts, and normalized transcriptomic data from a NASA-funded experiment examining the effects of artificial gravity on ocular tissues during spaceflight. The dataset originates from the Open Science Data Repository study OSD-758, which includes RNA-seq profiles of mouse optic nerve and retina following exposure to varying gravity levels aboard the International Space Station. This package enables streamlined access and analysis of the data for reproducible research and teaching in space biology, transcriptomics, and gravitational physiology. Source: \url{https://doi.org/10.26030/d6dj-d777}.
+Provides sample metadata, raw counts, and normalized transcriptomic data from a NASA-funded experiment examining the effects of artificial gravity on ocular tissues during spaceflight. The dataset originates from the Open Science Data Repository study OSD-758, which includes RNA-seq profiles of mouse retina following exposure to varying gravity levels aboard the International Space Station. This package enables streamlined access and analysis of the data for reproducible research and teaching in space biology, transcriptomics, and gravitational physiology. Source: \url{https://doi.org/10.26030/d6dj-d777}.
 }
 \seealso{
 Useful links:

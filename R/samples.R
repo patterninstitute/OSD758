@@ -35,6 +35,9 @@
 #'       \item `0.66` or `0.33` — partial gravity simulated by adjusting centrifuge speed.
 #'       \item `0.000001` — represents orbital free fall (a proxy for microgravity). Although gravitational pull is still ~90% of Earth’s at ISS altitude, this reflects the net effective acceleration in the free-fall frame.}
 #'     This variable supports quantitative modeling of gravity-dependent effects.}
+#'
+#'   \item{`gravity_class`}{Effective gravity categories as a factor variable.}
+#'
 #'   \item{`weight_at_launch`}{Body weight of the animal at the time of launch (or analogous time point for ground controls), in grams.}
 #'   \item{`weight_at_euthanasia`}{Body weight of the animal at euthanasia, in grams. Used to assess weight changes across experimental conditions.}
 #' }

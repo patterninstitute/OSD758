@@ -81,6 +81,14 @@ samples04 <-
       )
     ),
     gravity,
+    gravity_class = dplyr::case_when(
+      gravity == 1e-6 ~ "micro_G",
+      gravity == 0.33 ~ "0.33_G",
+      gravity == 0.66 ~ "0.66_G",
+      gravity == 1.00 ~ "1.00_G",
+      TRUE ~ NA_character_
+    ),
+    gravity_class = factor(gravity_class, levels = c("micro_G", "0.33_G", "0.66_G", "1.00_G")),
     weight_at_launch,
     weight_at_euthanasia
   )
