@@ -27,3 +27,9 @@ You can install the development version of OSD758 from
 # install.packages("pak")
 pak::pak("patterninstitute/OSD758")
 ```
+
+## Code of Conduct
+
+Please note that the OSD758 project is released with a [Contributor Code
+of Conduct](https://www.pattern.institute/OSD758/CODE_OF_CONDUCT.html).
+By contributing to this project, you agree to abide by its terms.
