@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# OSD758
+# OSD758 <a href="https://www.pattern.institute/OSD758/"><img src="man/figures/logo.svg" align="right" height="139" alt="OSD758 website" /></a>
 
 <!-- badges: start -->
 
@@ -14,9 +14,10 @@ package in R. It includes sample metadata and both raw and normalized
 gene expression counts derived from optic nerve and retinal tissues of
 mice subjected to varying levels of artificial gravity during
 spaceflight. The dataset, originally published in NASA’s Open Science
-Data Repository (OSD-758), offers a biologically meaningful and
-technically appropriate starting point for teaching, demonstration, or
-method development in differential gene expression analysis.
+Data Repository ([OSD-758](https://doi.org/10.26030/d6dj-d777)), offers
+a biologically meaningful and technically appropriate starting point for
+teaching, demonstration, or method development in differential gene
+expression analysis.
 
 ## Installation
 
