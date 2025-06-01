@@ -1,0 +1,24 @@
+Package: OSD758
+Title: Artificial Gravity Attenuates the Transcriptomic Response to Spaceflight in the Optic Nerve and Retina
+Version: 0.0.1
+Authors@R: c(
+    person("Ramiro", "Magno", , "rmagno@pattern.institute", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0001-5226-3441")),
+    person("Isabel", "Duarte", , "iduarte@pattern.institute", role = "aut",
+           comment = c(ORCID = "0000-0003-0060-2936")),
+    person("Pattern Institute", role = c("cph", "fnd"),
+           comment = c("https://www.pattern.institute", ROR = "04jrgd746"))
+  )
+Description: Provides sample metadata, raw counts, and normalized transcriptomic
+    data from a NASA-funded experiment examining the effects of artificial
+    gravity on ocular tissues during spaceflight. The dataset originates from
+    the Open Science Data Repository study OSD-758, which includes RNA-seq
+    profiles of mouse optic nerve and retina following exposure to varying
+    gravity levels aboard the International Space Station. This package enables
+    streamlined access and analysis of the data for reproducible research and
+    teaching in space biology, transcriptomics, and gravitational physiology.
+    Source: <https://doi.org/10.26030/d6dj-d777>.
+License: Apache License (>= 2) | file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
