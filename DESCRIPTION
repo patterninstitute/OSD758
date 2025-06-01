@@ -26,5 +26,7 @@ URL: https://www.pattern.institute/OSD758/, https://www.github.com/patterninstit
 BugReports: https://www.github.com/patterninstitute/OSD758/issues
 Config/Needs/website: patterninstitute/chic
 Imports: 
+    dplyr,
     readr,
-    tibble
+    tibble,
+    tidyr
