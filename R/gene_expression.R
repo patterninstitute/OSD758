@@ -36,7 +36,7 @@
 #' gene_expression()
 #'
 #' # Un-normalized counts in wide format (matrix)
-#' gene_expression("wide")
+#' gene_expression("wide")[1:5, 1:3]
 #'
 #' @export
 gene_expression <-
