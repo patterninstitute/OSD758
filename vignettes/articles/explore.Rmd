@@ -15,7 +15,8 @@ Let us start by loading the gene expression in long format, i.e. one row per
 gene × sample combination.
 
 ```{r message=FALSE}
-library(tidyverse)
+library(ggplot2)
+library(dplyr)
 library(OSD758)
 
 (counts <- gene_expression())

@@ -1,6 +1,6 @@
 Package: OSD758
 Title: Artificial Gravity Attenuates the Transcriptomic Response to Spaceflight in the Optic Nerve and Retina
-Version: 0.0.2
+Version: 0.0.3
 Authors@R: c(
     person("Ramiro", "Magno", , "rmagno@pattern.institute", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0001-5226-3441")),
@@ -30,3 +30,5 @@ Imports:
     readr,
     tibble,
     tidyr
+Suggests: 
+    ggplot2
