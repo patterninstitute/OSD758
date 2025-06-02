@@ -31,7 +31,7 @@
 
     <a class="navbar-brand me-2" href="index.html">OSD758</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.0.1</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.0.3</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -40,6 +40,12 @@
 
     <div id="navbar" class="collapse navbar-collapse ms-3">
       <ul class="navbar-nav me-auto">
+<li class="nav-item dropdown">
+  <button class="nav-link dropdown-toggle" type="button" id="dropdown-articles" data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true">Articles</button>
+  <ul class="dropdown-menu" aria-labelledby="dropdown-articles">
+<li><a class="dropdown-item" href="articles/explore.html">Exploratory Data Analysis</a></li>
+  </ul>
+</li>
 <li class="nav-item"><a class="nav-link" href="reference/index.html">Reference</a></li>
       </ul>
 <ul class="navbar-nav">
@@ -61,7 +67,7 @@
 </div>
 <!-- badges: start -->
 
-<p>The <code>OSD758</code> R data package provides a compact, real-world example dataset for illustrating RNA-seq analysis workflows using the DESeq2 package in R. It includes sample metadata and both raw gene expression counts derived from retinal tissues of mice subjected to varying levels of artificial gravity during spaceflight. The dataset, originally published in NASA’s Open Science Data Repository (<a href="https://doi.org/10.26030/d6dj-d777" class="external-link">OSD-758</a>), offers a biologically meaningful and technically appropriate starting point for teaching, demonstration, or method development in differential gene expression analysis.</p>
+<p>The <a href="https://www.github.com/patterninstitute/OSD758/" class="external-link">OSD758</a> R data package provides a compact, real-world example dataset for illustrating RNA-seq analysis workflows using the DESeq2 package in R. It includes sample metadata and both raw gene expression counts derived from retinal tissues of mice subjected to varying levels of artificial gravity during spaceflight. The dataset, originally published in NASA’s Open Science Data Repository (<a href="https://doi.org/10.26030/d6dj-d777" class="external-link">OSD-758</a>), offers a biologically meaningful and technically appropriate starting point for teaching, demonstration, or method development in differential gene expression analysis.</p>
 <div class="section level2">
 <h2 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
 </h2>
@@ -119,6 +125,7 @@
 <div class="dev-status">
 <h2 data-toc-skip>Dev status</h2>
 <ul class="list-unstyled">
+<li><a href="https://www.pattern.institute" class="external-link"><img src="https://img.shields.io/badge/Pattern%20Institute-R%20Data%20Package-00C0FF.svg"></a></li>
 <li><a href="https://github.com/patterninstitute/OSD758/actions/workflows/R-CMD-check.yaml" class="external-link"><img src="https://github.com/patterninstitute/OSD758/actions/workflows/R-CMD-check.yaml/badge.svg" alt="R-CMD-check"></a></li>
 </ul>
 </div>

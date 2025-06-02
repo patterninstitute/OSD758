@@ -1,8 +1,9 @@
 pandoc: 3.1.11
 pkgdown: 2.1.3
 pkgdown_sha: ~
-articles: {}
-last_built: 2025-06-01T16:00Z
+articles:
+  articles/explore: explore.html
+last_built: 2025-06-02T00:25Z
 urls:
   reference: https://www.pattern.institute/OSD758/reference
   article: https://www.pattern.institute/OSD758/articles
