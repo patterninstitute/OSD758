@@ -11,8 +11,8 @@ Provides sample metadata, raw counts, and normalized transcriptomic data from a 
 \seealso{
 Useful links:
 \itemize{
-  \item \url{https://www.pattern.institute/OSD758/}
   \item \url{https://www.github.com/patterninstitute/OSD758/}
+  \item \url{https://www.pattern.institute/OSD758/}
   \item Report bugs at \url{https://www.github.com/patterninstitute/OSD758/issues}
 }
 

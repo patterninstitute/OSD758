@@ -31,6 +31,8 @@
 #'
 #' @seealso [samples()]
 #'
+#' @source \doi{10.26030/d6dj-d777}
+#'
 #' @examples
 #' # Un-normalized counts in long format
 #' gene_expression()

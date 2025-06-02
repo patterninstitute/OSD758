@@ -2,7 +2,10 @@
 % Please edit documentation in R/samples.R
 \name{samples}
 \alias{samples}
-\title{Sample metadata table for RNA-seq experiment aboard ISS and on Earth}
+\title{Samples}
+\source{
+\doi{10.26030/d6dj-d777}
+}
 \usage{
 samples()
 }

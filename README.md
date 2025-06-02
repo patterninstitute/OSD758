@@ -5,10 +5,11 @@
 
 <!-- badges: start -->
 
+[![](https://img.shields.io/badge/Pattern%20Institute-R%20Data%20Package-00C0FF.svg)](https://www.pattern.institute)
 [![R-CMD-check](https://github.com/patterninstitute/OSD758/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/patterninstitute/OSD758/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
-The `OSD758` R data package provides a compact, real-world example
+The `{OSD758}` R data package provides a compact, real-world example
 dataset for illustrating RNA-seq analysis workflows using the DESeq2
 package in R. It includes sample metadata and both raw gene expression
 counts derived from retinal tissues of mice subjected to varying levels

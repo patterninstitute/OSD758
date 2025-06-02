@@ -1,0 +1,92 @@
+---
+title: "Exploratory Data Analysis"
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+## Gene Expression
+
+Let us start by loading the gene expression in long format, i.e. one row per
+gene × sample combination.
+
+```{r message=FALSE}
+library(tidyverse)
+library(OSD758)
+
+(counts <- gene_expression())
+```
+
+### Most expressed genes
+
+Calculating median counts per gene:
+
+```{r}
+median_gene_expression <-
+  counts |>
+  dplyr::group_by(ensembl_gen_id, gene_symbol) |>
+  dplyr::summarise(median_counts = median(counts), .groups = "drop") |>
+  dplyr::arrange(desc(median_counts))
+
+median_gene_expression
+```
+
+The mostly expressed gene is [rhodopsin
+(Rho)](https://www.informatics.jax.org/marker/MGI:97914) with a median of over
+2.7 million reads, perhaps not so surprising given that these RNAseq samples are
+from retina.
+
+### Not expressed genes
+
+On the contrary we have also genes that are not expressed at all. Actually,
+one-third of all genes (19,028) show no expression whatsoever in mouse retina:
+
+```{r}
+total_gene_expression <-
+  counts |>
+  dplyr::group_by(ensembl_gen_id, gene_symbol) |>
+  dplyr::summarise(total_counts = sum(counts), .groups = "drop") |>
+  dplyr::arrange(desc(total_counts))
+
+total_gene_expression |>
+  dplyr::filter(total_counts == 0L)
+```
+
+### Gene expression distribution
+
+The gene expression distribution is extremely skewed as one-third have no
+expression at all.
+
+```{r}
+median_gene_expression |>
+  ggplot(aes(x = median_counts)) +
+  geom_density()
+```
+
+Removing genes with a median expression of zero counts still produces a
+very skewed distribution.
+
+```{r}
+median_gene_expression |>
+  dplyr::filter(median_counts != 0) |>
+  ggplot(aes(x = median_counts)) +
+  geom_density()
+```
+
+Log-scale transforming the median counts allows to conciliate very low counts
+with million count values, we can appreciate (roughly) three intervals:
+
+- Below 100 counts
+- Between 100 and 10,000 counts
+- Above 10,000 counts
+
+```{r}
+median_gene_expression |>
+  dplyr::filter(median_counts != 0) |>
+  ggplot(aes(x = log10(median_counts))) +
+  geom_density()
+```

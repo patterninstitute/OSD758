@@ -1,4 +1,4 @@
-#' Sample metadata table for RNA-seq experiment aboard ISS and on Earth
+#' Samples
 #'
 #' @description
 #'
@@ -41,6 +41,8 @@
 #'   \item{`weight_at_launch`}{Body weight of the animal at the time of launch (or analogous time point for ground controls), in grams.}
 #'   \item{`weight_at_euthanasia`}{Body weight of the animal at euthanasia, in grams. Used to assess weight changes across experimental conditions.}
 #' }
+#'
+#' @source \doi{10.26030/d6dj-d777}
 #'
 #' @examples
 #' samples()

@@ -3,3 +3,14 @@ template:
   package: chic
   bootstrap: 5
 
+navbar:
+  structure:
+    left:  [intro, articles, reference]
+    right: [search, github]
+
+reference:
+
+- subtitle: Main datasets
+  contents:
+  - samples
+  - gene_expression

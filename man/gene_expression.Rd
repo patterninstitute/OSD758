@@ -3,6 +3,9 @@
 \name{gene_expression}
 \alias{gene_expression}
 \title{Un-normalized count data for mouse retina RNA-seq samples}
+\source{
+\doi{10.26030/d6dj-d777}
+}
 \usage{
 gene_expression(format = c("long", "wide"), only_expressed_genes = FALSE)
 }
